@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKVED</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pixelify+Sans:wght@600&family=Poppins:wght@300&display=swap');
+    body {
+        background-image: url('./assets/landing/bg.jpg');
+        /* background-color: #000000; */
+        color: white;
+        font-family: 'Pixelify Sans';
+        overflow: hidden;
+        user-select: none;
+    }
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>We are initializing</p>
+    </div>
+    <script>
+        setTimeout(()=> {
+        // In index2.html
+        if (window.innerWidth < 1024) {
+            window.location = "index2.html";
+        }
+        // In index1.html
+        if (window.innerWidth >= 1024) {
+            window.location = "index1.html";
+        }
+        }, 1500)
+    </script>
+</body>
+</html>
